@@ -1,27 +1,38 @@
-# AngularInputOutput
+# Angular Concepts Tutorials - Input & Output
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+This project provides an example of how to implement Input and Output functionality in and Angular application.
 
-## Development server
+### Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
 
-## Code scaffolding
+`npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Files
 
-## Build
+- `src/app/app.component.ts`
+- `src/app/components/fruit/apple.component.ts`
+- `src/app/components/fruit/lime.component.ts`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Links
 
-## Running unit tests
+- [Component Interaction](https://angular.io/guide/component-interaction#component-interaction)
+- [Input](https://angular.io/api/core/Input)
+- [Output](https://angular.io/api/core/Output)
+- [EventEmitter](https://angular.io/api/core/EventEmitter)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Tutorial Length
 
-## Running end-to-end tests
+15 minutes
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Level of Difficulty (1-5)
 
-## Further help
+2
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Last Modified
+
+25 September 2018
+
+### Author
+
+Jamie Gross ([LinkedIn](https://www.linkedin.com/in/james-l-gross/)) - [Grasp Mobile Development](https://graspmobiledevelop.com/)
