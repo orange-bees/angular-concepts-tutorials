@@ -2,6 +2,10 @@
 
 This repo provides simple and easy to follow examples of common Angular practices.
 
+### Install
+
+`git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
+
 ### Projects
 
 - [Inputs & Outputs](https://github.com/graspmobiledevelopment/angular-concepts-tutorials/tree/master/inputs-outputs)

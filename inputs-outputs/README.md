@@ -6,7 +6,10 @@ This project provides an example of how to implement Input and Output functional
 
 `git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
 
+`cd inputs-outputs`
+
 `npm install`
+
 
 ### Files
 
