@@ -10,14 +10,20 @@
 <div class="example">
   <p><b>App Component</b></p>
   <div class="form-field">
-    <label for="appleDescription">Change apple description:</label>
-    <input id="appleDescription" type="text" [(ngModel)]="appleDescription" placeholder="Type something...">
+    <label for="changeApples">Number of apples:</label>
+    <input id="changeApples" type="text" placeholder="0" [(ngModel)]="numberOfApples">
   </div>
-  <p>Lime Counter: {{ limeCounter }}</p>
+  <button (click)="changeApples()">Change Apples</button>
+  <div class="form-field">
+    <label for="changeLimes">Number of limes:</label>
+    <input id="changeLimes" type="text" placeholder="0" [(ngModel)]="numberOfLimes">
+  </div>
+  <button (click)="changeLimes()">Change Limes</button>
+  
   <p><b>Apple Component</b></p>
-  <app-apple [description]="appleDescription"></app-apple>
+  <app-apple></app-apple>
   <p><b>Lime Component</b></p>
-  <app-lime (increment)="incrementLimeCounter($event)"></app-lime>
+  <app-lime></app-lime>
 </div>
 
 <hr>
@@ -30,17 +36,17 @@
     - `src/app/app.component.ts`
     - `src/app/components/fruit/apple.component.ts`
     - `src/app/components/fruit/lime.component.ts`
+    - `src/app/services/grocery-store.service.ts`
 
     ### Links
 
-    - [Component Interaction](https://angular.io/guide/component-interaction#component-interaction)
-    - [Input](https://angular.io/api/core/Input)
-    - [Output](https://angular.io/api/core/Output)
-    - [EventEmitter](https://angular.io/api/core/EventEmitter)
+    - [rxjs](https://github.com/ReactiveX/rxjs)
+    - [Observabe](https://rxjs-dev.firebaseapp.com/api/index/class/Observable)
+    - [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
 
     ### Tutorial Length
 
-    15 minutes
+    10 minutes
 
     ### Level of Difficulty (1-5)
 
@@ -48,7 +54,7 @@
 
     ### Last Modified
 
-    08 October 2018
+    10 October 2018
 
     ### Author
 

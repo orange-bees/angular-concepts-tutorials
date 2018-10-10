@@ -1,12 +1,12 @@
-# Angular Concepts Tutorials - Input & Output
+# Angular Concepts Tutorials - Subjects
 
-This project provides an example of how to implement Input and Output functionality in an Angular application.
+This project provides an example of how to implement Subjects, specifically, BehaivorSubjects, functionality in an Angular application.
 
 ### Install
 
 `git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
 
-`cd inputs-outputs`
+`cd subjects`
 
 `npm install`
 
@@ -16,17 +16,17 @@ This project provides an example of how to implement Input and Output functional
 - `src/app/app.component.ts`
 - `src/app/components/fruit/apple.component.ts`
 - `src/app/components/fruit/lime.component.ts`
+- `src/app/services/grocery-store.service.ts`
 
 ### Links
 
-- [Component Interaction](https://angular.io/guide/component-interaction#component-interaction)
-- [Input](https://angular.io/api/core/Input)
-- [Output](https://angular.io/api/core/Output)
-- [EventEmitter](https://angular.io/api/core/EventEmitter)
+- [rxjs](https://github.com/ReactiveX/rxjs)
+- [Observabe](https://rxjs-dev.firebaseapp.com/api/index/class/Observable)
+- [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
 
 ### Tutorial Length
 
-15 minutes
+10 minutes
 
 ### Level of Difficulty (1-5)
 
@@ -34,7 +34,7 @@ This project provides an example of how to implement Input and Output functional
 
 ### Last Modified
 
-08 October 2018
+10 October 2018
 
 ### Author
 
