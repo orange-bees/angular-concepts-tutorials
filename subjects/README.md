@@ -4,7 +4,7 @@ This project provides an example of how to implement Subjects, specifically, Beh
 
 ### Install
 
-`git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
+`git clone https://github.com/orange-bees/angular-concepts-tutorials.git`
 
 `cd subjects`
 
@@ -28,14 +28,18 @@ This project provides an example of how to implement Subjects, specifically, Beh
 
 10 minutes
 
+### Tutorial Walkthrough
+
+https://itnext.io/angular-subjects-8ed5bf7c4f00
+
 ### Level of Difficulty (1-5)
 
 2
 
 ### Last Modified
 
-10 October 2018
+14 June 2019
 
 ### Author
 
-Jamie Gross ([LinkedIn](https://www.linkedin.com/in/james-l-gross/)) - [Grasp Mobile Development](https://graspmobiledevelop.com/)
+Jamie Gross ([LinkedIn](https://www.linkedin.com/in/james-l-gross/)) - [Orange Bees](https://orangebees.com)

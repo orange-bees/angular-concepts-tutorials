@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   numberOfLimes = 0;
   applesBasket$: BehaviorSubject<number>;
   limesBasket$: BehaviorSubject<number>;
+  lastEvent = '';
 
 
   constructor(
@@ -20,6 +21,13 @@ export class AppComponent implements OnInit {
   ) {
     this.applesBasket$ = this.groceryStoreService.getAppleBasket();
     this.limesBasket$ = this.groceryStoreService.getLimeBasket();
+
+    this.applesBasket$.subscribe(value => {
+      this.lastEvent = `Apples basket now has ${value} apple(s)`;
+    });
+    this.limesBasket$.subscribe(value => {
+      this.lastEvent = `Limes basket now has ${value} lime(s)`;
+    });
   }
 
   ngOnInit() {}

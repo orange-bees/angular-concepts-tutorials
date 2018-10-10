@@ -4,17 +4,17 @@ This repo provides simple and easy to follow examples of common Angular practice
 
 ### Install
 
-`git clone https://github.com/graspmobiledevelopment/angular-concepts-tutorials.git`
+`git clone https://github.com/orange-bees/angular-concepts-tutorials.git`
 
 ### Projects
 
-- [Inputs & Outputs](https://github.com/graspmobiledevelopment/angular-concepts-tutorials/tree/master/inputs-outputs)
-- [Subjects](https://github.com/graspmobiledevelopment/angular-concepts-tutorials/tree/master/subjects)
+- [Inputs & Outputs](https://github.com/orange-bees/angular-concepts-tutorials/tree/master/inputs-outputs)
+- [Subjects](https://github.com/orange-bees/angular-concepts-tutorials/tree/master/subjects)
 
 ### Last Modified
 
-10 October 2018
+14 June 2019
 
 ### Author
 
-Jamie Gross ([LinkedIn](https://www.linkedin.com/in/james-l-gross/)) - [Grasp Mobile Development](https://graspmobiledevelop.com/)
+Jamie Gross ([LinkedIn](https://www.linkedin.com/in/james-l-gross/)) - [Orange Bees](https://orangebees.com)
