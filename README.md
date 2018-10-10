@@ -9,10 +9,11 @@ This repo provides simple and easy to follow examples of common Angular practice
 ### Projects
 
 - [Inputs & Outputs](https://github.com/graspmobiledevelopment/angular-concepts-tutorials/tree/master/inputs-outputs)
+- [Subjects](https://github.com/graspmobiledevelopment/angular-concepts-tutorials/tree/master/subjects)
 
 ### Last Modified
 
-08 October 2018
+10 October 2018
 
 ### Author
 
