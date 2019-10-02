@@ -29,7 +29,7 @@ This project provides an example of how to implement Custom Form Validators
 
 ### Tutorial Walkthrough
 
-https://itnext.io/angular-input-output-f0418ab4cc91
+https://itnext.io/angular-custom-form-validation-bc513b45ccfa
 
 ### Level of Difficulty (1-5)
 
@@ -37,7 +37,7 @@ https://itnext.io/angular-input-output-f0418ab4cc91
 
 ### Last Modified
 
-09 September 2019
+02 October 2019
 
 ### Author
 

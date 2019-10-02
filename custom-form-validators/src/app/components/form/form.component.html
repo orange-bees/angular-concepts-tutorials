@@ -30,6 +30,8 @@
         placeholder="End Date">
     </div>
 
+    <p>{{ form?.errors | json }}</p>
+
     <br>
     <div *ngIf="form.controls.password?.errors?.required"
       class="error">

@@ -10,10 +10,11 @@ This repo provides simple and easy to follow examples of common Angular practice
 
 - [Inputs & Outputs](https://github.com/orange-bees/angular-concepts-tutorials/tree/master/inputs-outputs)
 - [Subjects](https://github.com/orange-bees/angular-concepts-tutorials/tree/master/subjects)
+- [Custom Form Validators](https://github.com/orange-bees/angular-concepts-tutorials/tree/master/custom-form-validators)
 
 ### Last Modified
 
-14 June 2019
+02 October 2019
 
 ### Author
 
