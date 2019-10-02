@@ -21,15 +21,13 @@ export class CustomValidatorsService {
       const startDate = new Date(start.value);
       const endDate = new Date(end.value);
 
-      const obj = Object.assign({}, control.errors);
       if (!this.isValidDate(startDate) || !this.isValidDate(endDate)) {
-        delete obj[errorKey];
         return null;
       } else if (startDate > endDate) {
+        const obj = {};
         obj[errorKey] = true;
         return obj;
       }
-      delete obj[errorKey];
       return null;
     };
   }
@@ -44,12 +42,9 @@ export class CustomValidatorsService {
         return null;
       }
 
-      const obj = Object.assign({}, control.errors);
       if (password.value !== confirmPassword.value) {
-        obj['passwordMismatch'] = true;
-        return obj;
+        return { passwordMismatch: true };
       }
-      delete obj['passwordMismatch'];
       return null;
     };
   }
