@@ -1,0 +1,67 @@
+<div class="container">
+  <p>This is a custom component called <i>app-form</i>.</p>
+  <p>Play around with the form.</p>
+
+  <form [formGroup]="form">
+    <div>
+      <input formControlName="password"
+        type="text"
+        placeholder="Password">
+    </div>
+    <div>
+      <input formControlName="confirmPassword"
+        type="text"
+        placeholder="Confirm Password">
+    </div>
+    <div>
+      <input formControlName="phoneNumber"
+        type="text"
+        placeholder="Phone Number">
+      <p class="hint">(###) ###-####</p>
+    </div>
+    <div>
+      <input formControlName="startDate"
+        type="date"
+        placeholder="Start Date">
+    </div>
+    <div>
+      <input formControlName="endDate"
+        type="date"
+        placeholder="End Date">
+    </div>
+
+    <br>
+    <div *ngIf="form.controls.password?.errors?.required"
+      class="error">
+      Password is required.
+    </div>
+    <div *ngIf="form.controls.confirmPassword?.errors?.required"
+      class="error">
+      Confirm password is required.
+    </div>
+    <div *ngIf="form.controls.phoneNumber?.errors?.required"
+      class="error">
+      Phone number is required.
+    </div>
+    <div *ngIf="form.controls.startDate?.errors?.required"
+      class="error">
+      Start date is required.
+    </div>
+    <div *ngIf="form.controls.endDate?.errors?.required"
+      class="error">
+      End date is required.
+    </div>
+    <div *ngIf="form?.errors?.passwordMismatch"
+      class="error">
+      Passwords do not match.
+    </div>
+    <div *ngIf="form.controls.phoneNumber?.errors?.pattern"
+      class="error">
+      Phone number pattern is incorrect.
+    </div>
+    <div *ngIf="form?.errors?.endBeforeStart"
+      class="error">
+      End date cannot be before start date.
+    </div>
+  </form>
+</div>
