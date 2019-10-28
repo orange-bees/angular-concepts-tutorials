@@ -29,7 +29,7 @@ This project provides an example of how to implement Event-Bus, with Observables
 
 ### Tutorial Walkthrough
 
-https://itnext.io/<something-here>
+https://itnext.io/something-here
 
 ### Level of Difficulty (1-5)
 

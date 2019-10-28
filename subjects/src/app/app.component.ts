@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GroceryStoreService } from './services/grocery-store.service';
+import { EventBusService } from './services/grocery-store.service';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -17,10 +17,10 @@ export class AppComponent implements OnInit {
 
 
   constructor(
-    private groceryStoreService: GroceryStoreService
+    private eventBusService: EventBusService
   ) {
-    this.applesBasket$ = this.groceryStoreService.getAppleBasket();
-    this.limesBasket$ = this.groceryStoreService.getLimeBasket();
+    this.applesBasket$ = this.eventBusService.getAppleBasket();
+    this.limesBasket$ = this.eventBusService.getLimeBasket();
 
     this.applesBasket$.subscribe(value => {
       this.lastEvent = `Apples basket now has ${value} apple(s)`;

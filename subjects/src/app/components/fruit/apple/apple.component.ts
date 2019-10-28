@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GroceryStoreService } from '../../../services/grocery-store.service';
+import { EventBusService } from '../../../services/grocery-store.service';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -11,9 +11,9 @@ export class AppleComponent implements OnInit {
   applesBasket$: BehaviorSubject<number>;
 
   constructor(
-    private groceryStoreService: GroceryStoreService
+    private eventBusService: EventBusService
   ) {
-    this.applesBasket$ = this.groceryStoreService.getAppleBasket();
+    this.applesBasket$ = this.eventBusService.getAppleBasket();
   }
 
   ngOnInit() {}

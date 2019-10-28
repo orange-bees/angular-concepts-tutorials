@@ -5,7 +5,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { AppComponent } from './app.component';
 import { AppleComponent } from './components/fruit/apple/apple.component';
 import { LimeComponent } from './components/fruit/lime/lime.component';
-import { GroceryStoreService } from './services/grocery-store.service';
+import { EventBusService } from './services/event-bus.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { GroceryStoreService } from './services/grocery-store.service';
     MarkdownModule.forRoot()
   ],
   providers: [
-    GroceryStoreService
+    EventBusService
   ],
   bootstrap: [AppComponent]
 })

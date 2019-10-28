@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class GroceryStoreService {
+export class EventBusService {
   private appleBasket: BehaviorSubject<number> = new BehaviorSubject<number>(0);
   private limeBasket: BehaviorSubject<number> = new BehaviorSubject<number>(10);
 
