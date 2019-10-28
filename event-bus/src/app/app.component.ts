@@ -1,42 +1,39 @@
-import { Component, OnInit } from '@angular/core';
-import { GroceryStoreService } from './services/grocery-store.service';
-import { BehaviorSubject } from 'rxjs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { EventBusService, EVENT_BUS_KEY } from './services/event-bus.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'Angular Concepts Tutorials - Subjects';
-  numberOfApples = 0;
-  numberOfLimes = 0;
-  applesBasket$: BehaviorSubject<number>;
-  limesBasket$: BehaviorSubject<number>;
+export class AppComponent implements OnInit, OnDestroy {
+  title = 'Angular Concepts Tutorials - Event-Bus';
+  lastApplePickedName = '';
+  applesEvent$: Subscription = null;
+  limesEvent$: Subscription = null;
   lastEvent = '';
 
 
   constructor(
-    private groceryStoreService: GroceryStoreService
-  ) {
-    this.applesBasket$ = this.groceryStoreService.getAppleBasket();
-    this.limesBasket$ = this.groceryStoreService.getLimeBasket();
+    private eventBusService: EventBusService
+  ) {}
 
-    this.applesBasket$.subscribe(value => {
-      this.lastEvent = `Apples basket now has ${value} apple(s)`;
+  ngOnInit() {
+    this.applesEvent$ = this.eventBusService.subscribeBus(EVENT_BUS_KEY.APPLES_KEY).subscribe(({ data }) => {
+      this.lastApplePickedName = data.name;
     });
-    this.limesBasket$.subscribe(value => {
-      this.lastEvent = `Limes basket now has ${value} lime(s)`;
+    this.limesEvent$ = this.eventBusService.subscribeBus(EVENT_BUS_KEY.LIMES_KEY).subscribe(() => {
+      // TODO
     });
   }
 
-  ngOnInit() {}
-
-  changeApples() {
-    this.applesBasket$.next(this.numberOfApples);
-  }
-
-  changeLimes() {
-    this.limesBasket$.next(this.numberOfLimes);
+  ngOnDestroy() {
+    if (this.applesEvent$) {
+      this.applesEvent$.unsubscribe();
+    }
+    if (this.limesEvent$) {
+      this.limesEvent$.unsubscribe();
+    }
   }
 }
