@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-input-output",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,6 +32,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -125,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "angular-input-output"
+  "defaultProject": "angular-input-output",
+  "cli": {
+    "analytics": "8e9d44f5-9a3e-492e-9205-fabf02d261de"
+  }
 }
