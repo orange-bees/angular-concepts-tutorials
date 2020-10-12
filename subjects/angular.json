@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "angular-input-output"
+  "defaultProject": "angular-input-output",
+  "cli": {
+    "analytics": "8e9d44f5-9a3e-492e-9205-fabf02d261de"
+  }
 }

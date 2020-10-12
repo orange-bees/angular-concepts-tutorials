@@ -38,7 +38,7 @@ https://itnext.io/angular-subjects-8ed5bf7c4f00
 
 ### Last Modified
 
-14 June 2019
+12 October 2020
 
 ### Author
 
