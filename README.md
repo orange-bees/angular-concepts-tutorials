@@ -14,7 +14,7 @@ This repo provides simple and easy to follow examples of common Angular practice
 
 ### Last Modified
 
-12 October 2020
+16 October 2020
 
 ### Author
 
