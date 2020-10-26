@@ -37,7 +37,7 @@ https://itnext.io/angular-custom-form-validation-bc513b45ccfa
 
 ### Last Modified
 
-02 October 2019
+26 October 2020
 
 ### Author
 
