@@ -38,7 +38,7 @@ https://itnext.io/angular-input-output-f0418ab4cc91
 
 ### Last Modified
 
-16 October 2020
+25 October 2021
 
 ### Author
 
